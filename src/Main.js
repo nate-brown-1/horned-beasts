@@ -8,20 +8,20 @@ class Main extends React.Component {
         <main>
           <HornedBeast
             title="Baby Goat"
-            imageUrl="../img/goat.jpg"
+            imageUrl="img/goat.jpg"
             imageAlt="A cute baby goat"
             imageTitle="Baby Goat"
             description="A cute baby goat. Look at those horns!"
             />
           <HornedBeast
             title="Ram"
-            imageUrl="../img/ram.jpg"
+            imageUrl="img/ram.jpg"
             imageAlt="This ram feels a little sheepish"
             imageTitle="Adult Ram"
             description="Not as cute as a goat, but has bigger horns."/>
           <HornedBeast
             title="Baphomet"
-            imageUrl="../img/baphomet.jpg"
+            imageUrl='img/baphomet.jpg'
             imageAlt="Baphomet demands a sacrifice!"
             imageTitle="Baphomet"
             description="Don't tell him he's cute."/>
