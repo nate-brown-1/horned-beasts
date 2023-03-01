@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
             title={this.props.imageTitle}>
           </img>
           <p onClick={this.handleLikes}>Like</p>
-          <p>{this.state.likes}</p>
+          <p>💌 {this.state.likes}</p>
           <p>
             {this.props.description}
           </p>
