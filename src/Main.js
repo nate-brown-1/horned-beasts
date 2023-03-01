@@ -20,7 +20,9 @@ class Main extends React.Component {
     return (
       <>
         <main>
+          <div className="beastBox">
           {ARRAY_OF_BEASTS}
+          </div>
         </main>
       </>
       );
