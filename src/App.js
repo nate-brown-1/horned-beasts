@@ -11,7 +11,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       isModalDisplayed: false,
-      beastTitle: ''
+      beastTitle: '',
+      beastImg: ''
     }
   }
 
@@ -21,10 +22,11 @@ class App extends React.Component {
     })
   }
 
-  handleShowModal = (title) => {
+  handleShowModal = (title, image_url) => {
     this.setState({
       isModalDisplayed: true,
-      beastTitle: title
+      beastTitle: title,
+      beastImgUrl: image_url
     })
   }
 
@@ -32,16 +34,26 @@ class App extends React.Component {
     return (
       <>
         <Header/>
-        <Main data={data}/>
+        <Main
+          data={data}
+          handleShowModal={this.handleShowModal}
+          />
         <Footer/>
-        <Modal
+        <Modal className='beastModal'
           show={this.state.isModalDisplayed}
           onHide={this.handleHideModal}
           >
             <Modal.Header closeButton>
               <Modal.Title>{this.state.beastTitle}</Modal.Title>
             </Modal.Header>
-            <p>these beasts like to show off</p>
+            <Modal.Body>
+            <img className='modalImg'
+                        src={this.state.beastImgUrl}
+                        alt={this.props.description}
+                        title={this.props.image_title}
+            />
+            </Modal.Body>
+            <Modal.Footer className='beastFooter'>these beasts like to show off</Modal.Footer>
           </Modal>
       </>
       )

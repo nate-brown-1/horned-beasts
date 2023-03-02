@@ -14,7 +14,7 @@ class Main extends React.Component {
           image_url={beast.image_url}
           image_title={beast.title}
           description={beast.description}
-          handleOpenModal={this.props.handleShowModal}
+          handleShowModal={this.props.handleShowModal}
         />
       )
     }
@@ -23,7 +23,7 @@ class Main extends React.Component {
     return (
       <>
         <main>
-          <div className="beastBox">
+          <div className='beastBox'>
             {ARRAY_OF_BEASTS}
           </div>
         </main>
