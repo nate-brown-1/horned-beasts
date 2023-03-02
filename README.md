@@ -41,3 +41,15 @@ Finish time: 2200
 Actual time needed to complete: 1 hr 45 min
 
 Feature incomplete at time of submission.
+
+#### Number and name of feature: Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 2330
+
+Finish time: 0030
+
+Actual time needed to complete: 1 hour
+
+Modal displays with images. Feature not 100%.

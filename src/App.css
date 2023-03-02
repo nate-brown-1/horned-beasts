@@ -11,27 +11,16 @@ body {
   background-color: gold;
 }
 
-.cardClass {
-  width: 500px;
-  height: 500px;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 5px;
-}
-
-.cardClass img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-}
-
 .beastBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+}
+
+.beastModal img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 footer {

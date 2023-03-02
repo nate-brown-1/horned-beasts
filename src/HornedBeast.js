@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import './HornedBeast.css';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -15,19 +16,23 @@ class HornedBeast extends React.Component {
     });  
   }
 
+  handleHeaderClick = () => {
+    this.props.handleShowModal(this.props.title, this.props.image_url);
+  }
+
   render() {
     return (
       <>
-        <Card className="cardClass">
+        <Card className='beastCard'>
           <Card.Img
-            variant="top"
+            variant='top'
             src={this.props.image_url}
             alt={this.props.description}
             title={this.props.image_title}
           />
           <Card.Body>
             <Card.Title>
-              <h2>{this.props.title}</h2>
+              <h2 onClick={this.handleHeaderClick}>{this.props.title}</h2>
             </Card.Title>
             <Card.Text>
               <p>{this.props.description}</p>
