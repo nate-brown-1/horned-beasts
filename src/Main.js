@@ -6,26 +6,28 @@ class Main extends React.Component {
   render() {
 
     const ARRAY_OF_BEASTS = [];
+    
     this.props.data.forEach((beast) => {
       ARRAY_OF_BEASTS.push(
-      <HornedBeast
-            title={beast.title}
-            image_url={beast.image_url}
-            image_title={beast.title}
-            description={beast.description}
-            />
-      )}
+        <HornedBeast
+          title={beast.title}
+          image_url={beast.image_url}
+          image_title={beast.title}
+          description={beast.description}
+        />
+      )
+    }
     )
 
     return (
       <>
         <main>
           <div className="beastBox">
-          {ARRAY_OF_BEASTS}
+            {ARRAY_OF_BEASTS}
           </div>
         </main>
       </>
-      );
+    );
   }
 }
 

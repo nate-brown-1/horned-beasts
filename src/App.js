@@ -6,6 +6,12 @@ import data from './data.json';
 import './App.css';
 
 class App extends React.Component {
+  // constructor(props) {
+    // super(props);
+  //   this.state = {
+  //     test: 'testing'
+  //   }
+  // }
 
   render() {
     return (
