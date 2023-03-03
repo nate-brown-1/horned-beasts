@@ -1,5 +1,8 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import { Form } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+
 
 class Main extends React.Component {
 
@@ -23,6 +26,22 @@ class Main extends React.Component {
     return (
       <>
         <main>
+          <>
+          <Form onSubmit={this.props.handleSubmit}>
+            <Form.Label onChange={this.handleTitleChange}>Beast Title
+              <Form.Control type="text" name="title" />
+            </Form.Label>
+            <Form.Label>Select Number of Horns
+              <Form.Select name="select-horns" onChange={this.handleHornsChange}>
+                <option value="1">1 Horn</option>
+                <option value="2">2 Horns</option>
+                <option value="3">3 Horns</option>
+                <option value="100">Very Horny</option>
+              </Form.Select>
+            </Form.Label>
+            <Button type="submit">Submit</Button>
+          </Form>
+          </>
           <div className='beastBox'>
             {ARRAY_OF_BEASTS}
           </div>
