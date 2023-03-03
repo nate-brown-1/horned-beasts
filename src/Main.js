@@ -2,6 +2,7 @@ import React from 'react';
 import HornedBeast from './HornedBeast';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import './Main.css';
 
 
 class Main extends React.Component {
@@ -27,6 +28,7 @@ class Main extends React.Component {
       <>
         <main>
           <>
+          <div className="HornsForm">
           <Form onSubmit={this.props.handleSubmit}>
             <Form.Label onChange={this.handleTitleChange}>Beast Title
               <Form.Control type="text" name="title" />
@@ -41,10 +43,11 @@ class Main extends React.Component {
             </Form.Label>
             <Button type="submit">Submit</Button>
           </Form>
-          </>
+          </div>
           <div className='beastBox'>
             {ARRAY_OF_BEASTS}
           </div>
+          </>
         </main>
       </>
     );
